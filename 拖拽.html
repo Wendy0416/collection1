@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        #box1 {
+            background:url(p1.png) no-repeat;
+            top: 50vw;
+            left:60vw;
+            width: 50vw;
+            height: 50vw;
+            position: fixed;
+        } 
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var box1 = document.getElementById("box1");
+            box1.onmousedown = function (event) {
+                // console.log(1);
+                /*再次点击时使得图标任然在那个位置，鼠标可以点击到图标上*/
+                var ol = event.clientX - box1.offsetLeft;
+                var ot = event.clientY - box1.offsetTop;
+                /*鼠标点击*/
+                document.onmousemove = function (event) {
+                    var left = event.clientX - ol;
+                    var top = event.clientY - ot;
+                    box1.style.left = left+"px";/*赋值*/
+                    box1.style.top = top+"px";
+                }
+                /*鼠标松开*/
+                document.onmouseup = function (event) {
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: 500px;width: 500px;">
+<div id="box1"></div>
+ 
+</body>
+</html>
+

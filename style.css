@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #993300;
+    transition: all .5s ease;
+    opacity:0.7;
+    /*transition-property: 70；*/
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background: #990000;
+    user-select: none;
+    opacity:1；
+    
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    translation: .5s;
+    
+}
+ul li:hover a{
+    padding-left: 50px;
+    opacity:0.5;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+    opacity:0.5;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+    opacity:0.5;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    /*opacity:0.5;*/
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size:30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    opacity:0.5;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+section{
+    background: url(bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+.bgimg{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background: url(1.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+.id{
+    width: 5vw；
+    height：5vw；
+}
+
+
+
+.b1{
+   position:fixed;
+    top: -3vw;
+    left: 76vw;
+    height:auto;
+    width: 25vw;
+}
+.b2{
+   position:fixed;
+    top: 13vw;
+    left: 76vw;
+    height:auto;
+    width: 25vw;
+}
+.b3{
+   position:fixed;
+    top: 32vw;
+    left: 76vw;
+    height:auto;
+    width: 25vw;
+}
+.b4{
+   position:fixed;
+    top: 32vw;
+    left: 50vw;
+    height:auto;
+    width: 35vw;
+}
+
+.b5{
+   position:fixed;
+    top: 39vw;
+    left: 33vw;
+    height:auto;
+    width: 25vw;
+}
+.b6{
+   position:fixed;
+    top: 32vw;
+    left: 13vw;
+    height:auto;
+    width: 27vw;
+}
+#check{
+  display:none;
+}
+
+.p1{
+    background: url(p1.png) no-repeat;
+     background-size:100% 100%;
+    position:fixed;
+    top: 36vw;
+    left: -3vw;
+    height: 33vw;
+    width: 27vw; 
+}
+.p2{
+    background: url(p2.png) no-repeat;
+     background-size:100% 100%;
+    position:fixed;
+    top: 13vw;
+    left: -3vw;
+    height: 33vw;
+    width: 27vw; 
+}
+
+.p3{
+    background: url(p3.png) no-repeat;
+     background-size:100% 100%;
+    position:fixed;
+    top: -6vw;
+    left: -1vw;
+    height: 30vw;
+    width: 25vw; 
+}
+
+.p4{
+    background: url(p4.png) no-repeat;
+     background-size:100% 100%;
+    position:fixed;
+    top: -8vw;
+    left: 14vw;
+    height: 37vw;
+    width: 32vw; 
+}
+
+.p5{
+    background: url(p5.png) no-repeat;
+     background-size:100% 100%;
+    position:fixed;
+    top: -6vw;
+    left: 36vw;
+    height: 32vw;
+    width: 26vw; 
+}
+
+.p6{
+    background: url(p6.png) no-repeat;
+     background-size:100% 100%;
+    position:fixed;
+    top: -6vw;
+    left: 55vw;
+    height: 33vw;
+    width: 27vw; 
+}
+.text1{
+    text-align:center;
+    font-family: Baskerville;
+    font-size:2vw;
+    font-weight:bold;
+    color:white;
+    /*line-height:22px;
+    height:65px;*/
+    float:center;
+    padding-top:305px;
+}
+
+.pp1 {
+    width: 400px;
+    color:white;
+    font-size: 17px;
+    font-family: Baskerville;
+   padding-top: 3vw;
+   padding-left: 36vw;
+   color:white;
+}
+
+.pp2 {
+    
+    color:white;
+    font-size: 9px;
+    font-family: Baskerville ;
+    font-weight: bold;
+   padding-bottom: : 100vw;
+   padding-left: 70vw;
+   color:white;
+   line-height: 40px;
+}
+
+.ps2{
+    color:white;
+    font-size: 15px;font-family: Baskerville ;
+    font-weight: bold;
+   margin-top:  3vw;
+   margin-left: 40vw;
+
+
+
+
